@@ -11,7 +11,7 @@ on:
 
 jobs:
  Compilar:
-   runs-on: Windows-Latest
+   runs-on: ubuntu-latest
    steps:
      - run: node --version
      - run: npm --version
