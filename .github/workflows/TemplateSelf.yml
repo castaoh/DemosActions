@@ -36,6 +36,8 @@ jobs:
           echo test, and deploy your project.
       
       - name: Checks Versions
-        run: node --version
-      - name: Check Versions
-        run: npm --version
+        run: | 
+            node --version
+            npm --version
+     ## - name: Check Versions
+            
