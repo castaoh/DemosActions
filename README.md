@@ -70,3 +70,4 @@ Find common terminology for reference [here](./CheatSheet.md)
 
 - [ ] My Comments
 - [ ]  Otros Comentarios
+- [ ]  Disparar por pull request
