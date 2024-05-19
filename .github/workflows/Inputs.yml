@@ -22,4 +22,13 @@ jobs:
       - name: Deploy build to target
         run: echo "Deploying build:${{ inputs.build_id }} to target:${{ inputs.deploy_target }}"
          
+      - name: Set the value
+        id: step_one
+        run: |
+         echo "action_state=yellow" >> "$GITHUB_ENV"
+      - name: Use the value
+        id: step_two
+        run: |
+         printf '%s\n' "$action_state" # This will output 'yellow'
+
          echo "### Vamos volando! :rocket:" >> $GITHUB_STEP_SUMMARY
