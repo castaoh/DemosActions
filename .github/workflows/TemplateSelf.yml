@@ -35,9 +35,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       
+      ## - name: Check Versions
       - name: Checks Versions
-        run: | 
+        run: |
             node --version
             npm --version
-     ## - name: Check Versions
+     
+     
             
