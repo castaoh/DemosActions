@@ -39,7 +39,7 @@ jobs:
           SELECTED_COLOR: ${{ steps.color-selector.outputs.SELECTED_COLOR }}
         run: echo "The selected color is $SELECTED_COLOR"
 
-         echo "### Vamos volando! :rocket:" >> $GITHUB_STEP_SUMMARY
+         echo "Vamos volando! :rocket:" >> $GITHUB_STEP_SUMMARY
 
 
   generate-a-secret-output:
@@ -55,4 +55,4 @@ jobs:
         run: |
           echo "the secret number is ${{ steps.sets-a-secret.outputs.secret-number }}"
 
-          echo "### Vamos volando! :rocket:" >> $GITHUB_STEP_SUMMARY 
+          echo "Vamos volando! :rocket:" >> $GITHUB_STEP_SUMMARY 
