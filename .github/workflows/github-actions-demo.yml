@@ -28,7 +28,8 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
-
+      - name: Ambiente
+        run: echo "The Selected Environment was ${{ github.event.inputs.environment }}"
 
   Test:
     runs-on: ubuntu-latest
